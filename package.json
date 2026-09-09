@@ -33,7 +33,6 @@
     "@drenso/homey-log": "10.7300.0",
     "@drenso/homey-zigbee-library": "2.6.0",
     "axios": "1.20.0",
-    "crypto": "1.0.1",
     "homey-lib": "2.52.2",
     "homey-oauth2app": "3.6.0",
     "homey-zigbeedriver": "2.2.18",
