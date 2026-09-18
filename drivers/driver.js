@@ -85,9 +85,8 @@ class ShellyDriver extends Homey.Driver {
         const discoveryResult = discoveryResultsMerged[selectedDeviceId];
 
         if (discoveryResult === undefined || discoveryResult === null) {
-          this.error('selected device with selectedDeviceId', selectedDeviceId, 'from discoveryResults is not defined, logging discoveryResults object.');
-          this.error(JSON.stringify(discoveryResultsMerged));
-          throw new Error('Selected device from discoveryResults is undefined, please send a diagnostic report to the developer. Device ID is', selectedDeviceId);
+          this.error('selected device from discoveryResults is not defined, discoveryResults keys count:', Object.keys(discoveryResultsMerged).length);
+          throw new Error('Selected device from discoveryResults is undefined, please send a diagnostic report to the developer.');
         } else {
 
           /* get device config based on hostname of the discovered device */
