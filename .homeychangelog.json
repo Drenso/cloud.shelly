@@ -1084,5 +1084,8 @@
   },
   "3.65.1": {
     "en": "Direct users to new Shelly Control app when WiFi device configuration is not found"
+  },
+  "3.65.2": {
+    "en": "Maintenance update"
   }
 }
